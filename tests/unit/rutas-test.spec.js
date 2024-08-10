@@ -3,7 +3,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import AboutView from "@/views/AboutView.vue";
 import HomeView from "@/views/HomeView.vue";
 
-//Ruta Counter
+//Ruta About
 describe("Tests de vista About", () => {
   it("Test1 - Probar la existencia del componente en la ruta", async () => {
     const router = createRouter({
