@@ -1,14 +1,22 @@
-import { createStore } from 'vuex'
+// src/store/index.js
+import { createStore } from 'vuex';
 
-export default createStore({
-  state: {
-  },
-  getters: {
+const store = createStore({
+  state() {
+    return {
+      count: 0
+    };
   },
   mutations: {
-  },
-  actions: {
-  },
-  modules: {
+    increment(state) {
+      state.count += 1;
+      console.log('Incrementado:', state.count);
+    },
+    decrement(state) {
+      state.count -= 1;
+      console.log('Decrementado:', state.count);
+    }
   }
-})
+});
+
+export default store;
